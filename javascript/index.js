@@ -1,4 +1,5 @@
 const pesquisar  = document.querySelector("#pesqbtn");
+const texto = document.querySelector("#pesqtxt");
 const caixaInfo = document.getElementById("CaixaI");
 const imgT = document.getElementById("imgT");
 const nome = document.getElementById("nomecity");

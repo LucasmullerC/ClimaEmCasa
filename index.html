@@ -7,18 +7,20 @@
         <link rel="stylesheet" href="theme/default/style.css" type="text/css">
         <link rel="stylesheet" href="css/styles.css"/>
         <link rel="stylesheet" href="css/ol.css" type="text/css">
+        <link rel="shortcut icon" href="img/nuvem.png"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <title>ClimaEmCasa</title>
     </head>
     <body>
-        <nav id="navb" class="navbar navbar-expand-md navbar-dark bg-dark">
+        <nav id="navb" class="navbar navbar-expand-sm navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="">Top navbar</a>
+
+                <img src="img/logo.png" alt="" class="d-inline-block align-text-top">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <ul id="nav1" class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="">Início</a>
                         </li>
@@ -26,8 +28,8 @@
                             <a class="nav-link" href="">Sobre</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input id="pesqtxt" class="form-control me-2" type="search" placeholder="Buscar Cidade" aria-label="Search">
+                    <form class="d-flex" action="javascript:getData()">
+                        <input id="pesqtxt" class="form-control me-2" placeholder="Buscar Cidade">
                         <button id="pesqbtn" class="btn btn-outline-success" type='button'>Pesquisar</button>
                     </form>
                 </div>

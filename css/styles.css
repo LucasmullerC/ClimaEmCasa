@@ -3,6 +3,17 @@
   font-family: fonte1;
   src: url('./fonts/font1.ttf');
 }
+@font-face {
+  font-family: fonte2;
+  src: url('./fonts/font2.ttf');
+}
+#navb{
+  background: linear-gradient(to bottom, #0099cc -19%, #b7dae4 100%);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  z-index: 2
+}
 html, body {
     margin:0px;
     min-height: 100% !important;
@@ -22,7 +33,6 @@ html, body {
   .mapa{
     height: 100%;
     width: 100%;
-    border: 2px solid #212529;
   }
   ol li{
     font-family: fonte1;
@@ -52,4 +62,17 @@ html, body {
     }
     .txttemp{
       font-size: 60px;
+    }
+    #pesqtxt{
+      font-family: fonte2;
+    }
+    #pesqbtn{
+      font-family: fonte2;
+      font-weight: bolder;
+      color: black;
+    }
+    #nav1{
+      font-family: fonte2;
+      font-size: 20px;
+      color: black;
     }
