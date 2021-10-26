@@ -1,9 +1,34 @@
+* { padding: 0; margin: 0; }
 html, body {
     margin:0px;
-    height:100%;
+    min-height: 100% !important;
+    height:100% !important;
     overflow: hidden;
+    background-size: cover;
   }
-.mapa{
+  .caixaT{
+      height: 100%;
+      display: grid;
+      grid-template-columns: 100% 0%;
+  }
+  .CaixaMapa{
+    background-attachment: fixed;
+    z-index: 1;
+  }
+  .mapa{
+    height: 100%;
     width: 100%;
-    height:100%;
-}
+    border: 2px solid #212529;
+  }
+ .CaixaInfo{
+   display: block;
+    position:absolute;
+    z-index: 5;
+    left:70%;
+    height: 100%;
+    width: 30%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    }

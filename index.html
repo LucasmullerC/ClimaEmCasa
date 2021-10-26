@@ -25,13 +25,21 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar Cidade" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                        <input id="pesqtxt" class="form-control me-2" type="search" placeholder="Buscar Cidade" aria-label="Search">
+                        <button id="pesqbtn" class="btn btn-outline-success" type='button'>Pesquisar</button>
                     </form>
                 </div>
             </div>
         </nav>
-        <iframe id="map" class="mapa" src="mapa.html"></iframe>
+        <div id="caixaT" class="caixaT">
+            <div class="CaixaMapa">
+                <div id="mapdiv" class="mapa"></div>
+            </div>
+            <div id="CaixaI" class="CaixaInfo"></div>
+        </div>
+        <script src="https://www.openlayers.org/api/OpenLayers.js"></script>
+        <script type='text/javascript' src='javascript/Mapa.js'></script>
     </body>
     <script type='text/javascript' src='javascript/index.js'></script>
+    <script type='text/javascript' src='javascript/Animations.js'></script>
 </html>
