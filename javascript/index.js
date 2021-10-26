@@ -1,5 +1,13 @@
 const pesquisar  = document.querySelector("#pesqbtn");
 const caixaInfo = document.getElementById("CaixaI");
+const imgT = document.getElementById("imgT");
+const nome = document.getElementById("nomecity");
+const temperatura = document.getElementById("temperatura");
+const termica = document.getElementById("termica");
+const humidade = document.getElementById("humidade");
+const maxima = document.getElementById("maxima");
+const minima = document.getElementById("minima");
+const desc= document.getElementById("desc");
 
 async function getData() {
     localiz = document.getElementById("pesqtxt").value;
@@ -32,7 +40,15 @@ async function getData() {
     }
 
 function pesquisa(tempo) {
-    Mapa(tempo.coord.lat,tempo.coord.lon);
+    Mapa(tempo.coord.lon,tempo.coord.lat);
+    imgT.src = "https://openweathermap.org/img/wn/"+tempo.weather[0].icon+"@2x.png"
+    nome.innerHTML=tempo.name;
+    temperatura.innerHTML=tempo.main.temp+"<span>&#8451;</span>";
+    termica.innerHTML="Sensação Térmica: "+tempo.main.feels_like+"<span>&#8451;</span>";
+    humidade.innerHTML="Humidade: <br>"+tempo.main.humidity+"%";
+    maxima.innerHTML="Máxima: <br>"+tempo.main.temp_max+"<span>&#8451;</span>";
+    minima.innerHTML="Mínima: <br>"+tempo.main.temp_min+"<span>&#8451;</span>";
+    desc.innerHTML=tempo.weather[0].description;
     unfade(caixaInfo,10);
 }
 
