@@ -49,7 +49,7 @@ body{
   display: grid;
   grid-template-columns: 30% 30% 30%;
   width: 700px;
-  height: 240px;
+  height: 290px;
   grid-column-gap: 20px;
   justify-content: center;
   align-items: center;
@@ -84,7 +84,6 @@ h1{
 .fotos{
   height: 200px;
   border-radius: 3px;
-  border:3px solid #0099cc
 }
 #format{
   width: 700px;
@@ -107,4 +106,20 @@ h1{
 .fotos{
   text-align: center;
 }
-
+@media(max-width:726px) {
+  p {
+    font-size: 20px;
+  }
+  #container img {
+    width: 80%;
+  }
+  #container {
+    width: 90vw;
+  }
+  #alinhar {
+   width: 90vw;
+   }
+  #format{
+    width: 90vw;
+  }
+}
