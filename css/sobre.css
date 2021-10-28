@@ -1,0 +1,82 @@
+
+@font-face {
+  font-family: fonte1;
+  src: url('./fonts/font1.ttf');
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: url("https://cdn.discordapp.com/attachments/757649913436831857/902990004639383572/mapa.png") no-repeat center center fixed;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100% !important;
+  height: 100% !important;
+  background-size: cover;
+}
+#container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  width: 700px;
+  height: 240px;
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#alinhar {
+ text-align: center;
+  margin-top: 50px;
+}
+#container img {
+  width: 100%;
+}
+p {
+  font-family: fonte1;
+  font-size: 25px;
+  color:white;
+  text-shadow: 1px 1px 2px black;
+}
+a{
+  font-family: fonte1;
+  font-size: 25px;
+  color:gray;
+  text-shadow: 1px 1px 2px black;
+  text-decoration: none;
+}
+ol li{
+  list-style-type: none;
+}
+h1{
+  color:white;
+  text-shadow: 1px 1px 2px black;
+}
+img{
+  height: 200px;
+  border-radius: 3px;
+  border:3px solid #0099cc
+}
+#format{
+  width: 700px;
+}
+.embassar{
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+}
+#Titleequipe{
+  text-align: center;
+  justify-content: center;
+}
+#meio{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.fotos{
+  text-align: center;
+}
+
