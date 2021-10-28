@@ -1,68 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
     <head>
-      <title>Sobre</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/sobre.css">
     </head>
-    
-         <div id = "meio"><h1 id = "Titlequipe">Equipe</h1></div>
-    <p> <div id="container" class = "embassar">
-         <div class = "fotos">
-        <img src="img/foto joao.png" >
-        <p>João Vitor</p>
-         </div>
-        <div class = "fotos">
-          <img src="img/foto muller.png" >
-          <p>Lucas Muller</p> 
-        </div>
-       <div class = "fotos">
-        <img src="img/foto thobias.png">
-        <p>Raffael Thobias</p>
-       </div>
-        </div>
-</p> 
+    <body>
+        <nav id="navb" class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <img src="img/logo.png" alt="" class="d-inline-block align-text-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul id="nav1" class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./sobre.html">Sobre</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" action="javascript:getData()">
+                        <input id="pesqtxt" class="form-control me-2" placeholder="Buscar Cidade">
+                        <button id="pesqbtn" class="btn btn-outline-success" type='button'>Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="corpo">
+            <div id="meio">
+                <h1 id="Titlequipe">Equipe</h1>
+            </div>
+            <p>
+                <div id="container" class="embassar">
+                    <div class="fotos">
+                        <img src="img/foto joao.png">
+                        <p>João Vitor</p>
+                    </div>
+                    <div class="fotos">
+                        <img src="img/foto muller.png">
+                        <p>Lucas Muller</p>
+                    </div>
+                    <div class="fotos">
+                        <img src="img/foto thobias.png">
+                        <p>Raffael Thobias</p>
+                    </div>
+                </div>
+            </p>
 
- 
-  <div id= "alinhar">
-    <h1><strong>Sobre</strong></h1>
-    <div id = "format" class = "embassar">
-      <p>ClimaEmCasa é um site que traz um simples serviço, mas que ainda é importante, de verificar o clima em uma determinada localidade
-        basta somente inserir o nome da sua <span>cidade</span> que em instantes você saberá se vai poder ir para 
-        a praia ou se vai ter que usar um casaco no final da tarde.
-      </p>
-    </div>
-    <div id= "alinhar">
-      <h1><strong>🌎 Visão Geral</strong></h1>
-      <div id = "format" class = "embassar">
-        <p>O ClimaEmCasa é um projeto feito por três estudantes para a disciplina de Programação Web e Mobile da Universidade Católica De Pernambuco.
-          O projeto foi visado para ser feito de uma forma simples e com um belo visual, utilizando no mínimo uma API Rest.
-        </p>
-      </div>
-      <div id= "alinhar">
-        <h1><strong>🛠 Tecnologias</strong></h1>
-        <div id = "format" class = "embassar">
-          <p>As seguintes ferramentas e APIs que foram usadas na construção do projeto:
-          </p>
-            <ol>
-              <li>
-                <a href="https://getbootstrap.com/">Bootstrap</a>
-              </li>
-              <li>
-                <a href="https://openlayers.org/">OpenLayers</a>
-              </li>
-              <li>
-                <a href="https://rapidapi.com/community/api/open-weather-map/">Open Weather Map</a>
-              </li>
-            </ol>
-        </div>
-      
 
-</div>
-     
-<body>
- 
-</body>
-    
+            <div id="alinhar">
+                <h1>
+                    <strong>Sobre</strong>
+                </h1>
+                <div id="format" class="embassar">
+                    <p>ClimaEmCasa é um site que traz um simples serviço, mas que ainda é importante, de verificar o clima em uma determinada localidade
+                                                                                                                                                                                                                                                                                                                                                                                                            basta somente inserir o nome da sua
+                        <span>cidade</span>
+                        que em instantes você saberá se vai poder ir para 
+                                                                                                                                                                                                                                                                                                                                                                                                            a praia ou se vai ter que usar um casaco no final da tarde.
+                    </p>
+                </div>
+                <div id="alinhar">
+                    <h1>
+                        <strong>🌎 Visão Geral</strong>
+                    </h1>
+                    <div id="format" class="embassar">
+                        <p>O ClimaEmCasa é um projeto feito por três estudantes para a disciplina de Programação Web e Mobile da Universidade Católica De Pernambuco.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      O projeto foi visado para ser feito de uma forma simples e com um belo visual, utilizando no mínimo uma API Rest.
+                        </p>
+                    </div>
+                    <div id="alinhar">
+                        <h1>
+                            <strong>🛠 Tecnologias</strong>
+                        </h1>
+                        <div id="format" class="embassar">
+                            <p>As seguintes ferramentas e APIs que foram usadas na construção do projeto:
+                            </p>
+                            <ol>
+                                <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                                <li><a href="https://openlayers.org/">OpenLayers</a></li>
+                                <li><a href="https://rapidapi.com/community/api/open-weather-map/">Open Weather Map</a></li>
+                            </ol>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </body>
+    </body>
 </html>
