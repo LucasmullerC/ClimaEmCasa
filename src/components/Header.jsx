@@ -6,15 +6,10 @@ import Nav from 'react-bootstrap/Nav';
 import logo from '../img/logo.png';
 import "../css/Header.css";
 
-class Header extends React.Component {
-    render() {
-      return <HeaderComp />;
-    }
-  }
+  const Header = ({ onToggleSideBar , headerClass }) => {
 
-  const HeaderComp = () => {
     return(    
-        <Navbar expand="lg" className="bg-body-tertiary" id="NavbarHeader">
+        <Navbar expand="lg" className={`bg-body-tertiary ${headerClass}`} id="NavbarHeader">
         <Container id="containerHeader">
         <Navbar.Brand href="#home">
             <img
@@ -24,6 +19,8 @@ class Header extends React.Component {
               id="imgHeader"
             />
           </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav" >
           <div className="d-flex flex-grow-1 justify-content-center">
           <form class="form">
               <button>
@@ -39,6 +36,15 @@ class Header extends React.Component {
               </button>
           </form>
           </div>
+          <Nav>
+            <Container id="ContHeaderol">
+            <ol id="olHeader">
+                <li>teste</li>
+                <li>tste</li>
+              </ol>
+            </Container>
+          </Nav>
+          </Navbar.Collapse>
         </Container>
         <Nav>
         <button id="btnHeader">
@@ -51,11 +57,8 @@ class Header extends React.Component {
                   </svg>
               </button>
           </Nav>
-      </Navbar>
+      </Navbar>  
       );
-  }
-  export default () => (
-    <React.Fragment>
-      <Header />
-    </React.Fragment>
-  );
+  };
+  
+  export default Header;
