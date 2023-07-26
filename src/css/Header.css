@@ -8,6 +8,15 @@
     padding-left: 10px !important;
 }
 
+.dropdown-toggle::after {
+  display: none !important; 
+}
+
+#socialHeader{
+  width: 20px;
+  height: 20px;
+}
+
 .header-sidebar-open {
   width: 70% !important /* Altura reduzida quando a barra lateral está aberta */
 }
@@ -22,8 +31,10 @@
     border: none;
     background: none;
     color: #8b8ba7;
-    padding-bottom: 8px;
-    padding-right: 8px;
+    padding: 0px;
+    margin-top: 8px;
+    margin-left: 8px;
+    padding-left: 5px;
     background: var(--input-bg,#fff);
     border-radius: 10px;
     width: 100%;
@@ -31,8 +42,17 @@
     filter: drop-shadow(1px 1px 5px black);
     z-index: 10 !important;
 }
+#navEndHeader{
+  width: 50px;
+}
+#dropdown-menu {
+  right: 0;
+  left: auto;
+}
 #olHeader{
   padding-top: 20px !important;
+  margin: 0px !important;
+  padding-left: 0px !important;
   display: none;
   height: 100%;
 }
