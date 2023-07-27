@@ -4,10 +4,12 @@ import '../css/Map.css'
 import { Map, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import OSM from 'ol/source/OSM';
+import { fromLonLat } from 'ol/proj';
 import { defaults as defaultControls } from 'ol/control';
 
-const OpenLayersMap = () => {
+const OpenLayersMap = ({ center }) => {
   const mapRef = useRef(null);
+
 
   useEffect(() => {
     if (!mapRef.current) return;
@@ -22,15 +24,15 @@ const OpenLayersMap = () => {
         }),
       ],
       view: new View({
-        center: [0, 0],
-        zoom: 2,
+        center: fromLonLat(center),
+        zoom: 10,
       }),
     });
 
     return () => {
       map.setTarget(null);
     };
-  }, []);
+  }, [center]);
 
   return (
     <div

@@ -5,16 +5,18 @@ import VerticalBox from './components/VerticalBox';
 
 function App() {
   const [dados, setDados] = useState('');
+  const [mapCenter, setMapCenter] = useState([0, 0]);
 
   const handleDataReceived = (dados) => {
-    setDados(dados); // Armazena o título no estado do componente App
+    setDados(dados); 
+    setMapCenter([dados.coord.lon,dados.coord.lat])
   };
 
   return (
     <>
     <Header onDataReceived={handleDataReceived}/> 
     {dados !== '' && <VerticalBox dados={dados} />}
-    <OpenLayersMap/>
+    {mapCenter  && <OpenLayersMap center={mapCenter}/>}
     </>
   );
 }
