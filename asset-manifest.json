@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ClimaEmCasa/static/css/main.70411c83.css",
+    "main.js": "/ClimaEmCasa/static/js/main.bc5d2168.js",
+    "static/js/787.1f24aae3.chunk.js": "/ClimaEmCasa/static/js/787.1f24aae3.chunk.js",
+    "static/media/github.png": "/ClimaEmCasa/static/media/github.abb5df5cb6033db6a886.png",
+    "static/media/linkedin.png": "/ClimaEmCasa/static/media/linkedin.bb933d6809d6410387a0.png",
+    "index.html": "/ClimaEmCasa/index.html",
+    "main.70411c83.css.map": "/ClimaEmCasa/static/css/main.70411c83.css.map",
+    "main.bc5d2168.js.map": "/ClimaEmCasa/static/js/main.bc5d2168.js.map",
+    "787.1f24aae3.chunk.js.map": "/ClimaEmCasa/static/js/787.1f24aae3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70411c83.css",
+    "static/js/main.bc5d2168.js"
+  ]
+}
