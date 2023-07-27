@@ -4,16 +4,16 @@ import OpenLayersMap from './components/OpenLayersMap';
 import VerticalBox from './components/VerticalBox';
 
 function App() {
-  const [showSideBar, setShowSideBar] = useState(false);
+  const [dados, setDados] = useState('');
 
-  const handleToggleSideBar = () => {
-    setShowSideBar((prevState) => !prevState);
+  const handleDataReceived = (dados) => {
+    setDados(dados); // Armazena o título no estado do componente App
   };
 
   return (
     <>
-    <Header onToggleSideBar={handleToggleSideBar} headerClass={showSideBar ? 'header-sidebar-open' : ''}/> 
-    {showSideBar && <VerticalBox/>}
+    <Header onDataReceived={handleDataReceived}/> 
+    {dados !== '' && <VerticalBox dados={dados} />}
     <OpenLayersMap/>
     </>
   );

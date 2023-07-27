@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
@@ -7,9 +7,42 @@ import Nav from 'react-bootstrap/Nav';
 import logo from '../img/logo.png';
 import github from "../img/github.png"
 import linkedin from "../img/linkedin.png"
+import axios from 'axios'
 import "../css/Header.css";
 
-  const Header = ({ onToggleSideBar , headerClass }) => {
+  const Header = ({ onToggleSideBar , headerClass, onDataReceived }) => {
+    const [isLoading, setIsLoading] = useState(false);
+    const [message, setMessage] = useState('');
+
+    const handleClick = async () => {
+
+      setIsLoading(true);
+      const options = {
+        method: 'GET',
+        url: 'https://open-weather13.p.rapidapi.com/city/'+message,
+        headers: {
+          'X-RapidAPI-Key': 'a991352078msh0ed9486840e517fp127e2djsnef9be514ff7e',
+          'X-RapidAPI-Host': 'open-weather13.p.rapidapi.com'
+        }
+      };
+
+      try {
+        const response = await axios.request(options);
+        onDataReceived(response.data);
+        setIsLoading(false);
+      } catch (error) {
+        console.error(error);
+        setIsLoading(false);
+      }
+    };
+
+    const handleChange = event => {
+      setMessage(event.target.value);
+    };
+
+    function resetMessage (){
+      setMessage("")
+    }
 
     return(    
         <Navbar expand="lg" className={`bg-body-tertiary ${headerClass}`} id="NavbarHeader">
@@ -26,13 +59,13 @@ import "../css/Header.css";
           <Navbar.Collapse id="basic-navbar-nav" >
           <div className="d-flex flex-grow-1 justify-content-center">
           <form class="form">
-              <button>
-                  <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+              <button onClick={handleClick} disabled={isLoading}>
+                  <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search" >
                       <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
                   </svg>
               </button>
-              <input class="input" placeholder="Pesquisar" required="" type="text"></input>
-              <button class="reset" type="reset">
+              <input class="input" placeholder={isLoading ? 'Carregando...' : 'Pesquisar'} required="" type="text" onChange={handleChange} value={message}></input>
+              <button class="reset" type="reset" onClick={resetMessage}>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
