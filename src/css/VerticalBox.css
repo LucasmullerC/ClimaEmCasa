@@ -12,6 +12,16 @@
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
 }
+#ContarinerTopVertical{
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: right;
+}
+#btntopVertical{
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
 #olVertical li {
     list-style-type: none;
     text-transform: uppercase;

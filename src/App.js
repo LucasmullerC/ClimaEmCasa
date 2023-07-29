@@ -5,7 +5,12 @@ import VerticalBox from './components/VerticalBox';
 
 function App() {
   const [dados, setDados] = useState('');
-  const [mapCenter, setMapCenter] = useState([0, 0]);
+  const [mapCenter, setMapCenter] = useState([-34.871292, -8.063118]);
+  const [showSideBar, setShowSideBar] = useState(true);
+
+  const handleToggleSideBar = () => {
+    setShowSideBar((prevState) => !prevState);
+  };
 
   const handleDataReceived = (dados) => {
     setDados(dados); 
@@ -15,7 +20,7 @@ function App() {
   return (
     <>
     <Header onDataReceived={handleDataReceived}/> 
-    {dados !== '' && <VerticalBox dados={dados} />}
+    {dados !== '' && showSideBar && <VerticalBox dados={dados} onToggleSideBar={handleToggleSideBar} />}
     {mapCenter  && <OpenLayersMap center={mapCenter}/>}
     </>
   );
