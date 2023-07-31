@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://lucasmullerc.github.io/ClimaEmCasa/">
-    <img src="https://lucasmullerc.github.io/ClimaEmCasa/img/logo.png" alt="Unform" />
+    <img src="https://raw.githubusercontent.com/LucasmullerC/ClimaEmCasa/main/img/logo.png" alt="Unform" />
   </a>
 </p>
 <h1 align="center">ClimaEmCasa</h1>
@@ -28,8 +28,8 @@ O OpenLayers foi embutido em nosso código para maior otimização e funcionamen
 ---
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/LucasmullerC"><img style="border-radius: 50%;" src="https://lucasmullerc.github.io/ClimaEmCasa/img/foto%20muller.png" width="100px;" alt=""/><br /><sub><b>Lucas Müller</b></sub></a><br /><a href="https://github.com/LucasmullerC" title="Rocketseat">🚀</a></td>
-    <td align="center"><a href="https://github.com/AngelomBot"><img style="border-radius: 50%;" src="https://lucasmullerc.github.io/ClimaEmCasa/img/foto%20joao.png" width="100px;" alt=""/><br /><sub><b>João Vitor</b></sub></a><br /><a href="https://github.com/AngelomBot" title="Rocketseat">🚀</a></td>
-    <td align="center"><a href="https://github.com/dashp21"><img style="border-radius: 50%;" src="https://lucasmullerc.github.io/ClimaEmCasa/img/foto%20thobias.png" width="100px;" alt=""/><br /><sub><b>Raffael Thobias</b></sub></a><br /><a href="https://github.com/dashp21" title="Rocketseat">🚀</a></td>
+    <td align="center"><a href="https://github.com/LucasmullerC"><img style="border-radius: 50%;" src="https://github.com/LucasmullerC/ClimaEmCasa/blob/main/img/foto%20muller.png" width="100px;" alt=""/><br /><sub><b>Lucas Müller</b></sub></a><br /><a href="https://github.com/LucasmullerC" title="Rocketseat">🚀</a></td>
+    <td align="center"><a href="https://github.com/AngelomBot"><img style="border-radius: 50%;" src="https://github.com/LucasmullerC/ClimaEmCasa/blob/main/img/foto%20joao.png" width="100px;" alt=""/><br /><sub><b>João Vitor</b></sub></a><br /><a href="https://github.com/AngelomBot" title="Rocketseat">🚀</a></td>
+    <td align="center"><a href="https://github.com/dashp21"><img style="border-radius: 50%;" src="https://github.com/LucasmullerC/ClimaEmCasa/blob/main/img/foto%20thobias.png" width="100px;" alt=""/><br /><sub><b>Raffael Thobias</b></sub></a><br /><a href="https://github.com/dashp21" title="Rocketseat">🚀</a></td>
   </tr>
 </table>
